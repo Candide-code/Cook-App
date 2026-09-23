@@ -5,6 +5,7 @@ App qui gamifie la vraie cuisine : on suit des recettes faciles pas à pas en ma
 **Techno :** HTML, CSS, JavaScript (sans framework)
 **Méthode :** on code ensemble, étape par étape. Chaque étape se termine par quelque chose qui marche dans le navigateur.
 **Référence :** toutes les décisions sont dans [phase-0-cadrage.md](phase-0-cadrage.md).
+**En ligne :** https://candide-code.github.io/Cook-App/ (GitHub Pages, mis à jour à chaque push sur `main`)
 
 ---
 
@@ -43,7 +44,7 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
 - [x] Accueil généré en JS, en-tête avec niveau / titre / XP réels
 - [x] Formules RPG (`joueur/xp.js`)
 - [x] Écran de préparation (cases à cocher)
-- [x] Écran de cuisine : étapes « ajouter » (plateau + 3 pièges), « action » (taps + jauge), « cuisson » (minuteur)
+- [x] Écran de cuisine : étapes « ajouter » (plateau avec seulement les ingrédients de la recette), « action » (taps + jauge), « cuisson » (minuteur)
 - [x] Erreurs : tremblement, vibration, aide à la 3e erreur
 - [x] Fin de recette : « J'ai fini », XP, level up, récap
 - [x] Sauvegarde (`localStorage`)
@@ -72,7 +73,7 @@ Les étapes ci-dessous restent la référence ; celles couvertes par la tranche 
   - *JS découvert :* événements `click`, afficher/cacher des éléments
 - [ ] **13. Écran de préparation** : ingrédients et ustensiles à cocher, bouton « Commencer »
 - [ ] **14. Écran de cuisine** : progression des étapes (« Étape 2/6 »), sprite de l'ustensile, consigne dans une boîte de dialogue façon RPG
-- [ ] **15. Étape « ajouter »** : plateau d'ingrédients avec quelques pièges ; cliquer sur le bon ingrédient valide l'étape
+- [ ] **15. Étape « ajouter »** : plateau avec seulement les ingrédients de la recette ; cliquer sur le bon ingrédient valide l'étape
   - *C'est le cœur du jeu.*
 - [ ] **16. Les erreurs** : pas de pénalité ; l'écran tremble, le téléphone vibre (Android), et à la 3e erreur un message indique le bon ingrédient
 - [ ] **17. Étape « action »** : taper l'ustensile plusieurs fois (remuer, retourner…), avec une jauge
@@ -117,7 +118,7 @@ Les étapes ci-dessous restent la référence ; celles couvertes par la tranche 
 
 ## Phase 7 : Finitions et partage
 - [ ] **28. Tests sur téléphone** : Android et iPhone, thème clair et sombre
-- [ ] **29. Mise en ligne** : GitHub Pages, pour partager le lien avec les potes
+- [x] **29. Mise en ligne** : GitHub Pages, pour partager le lien avec les potes
 - [ ] **30. Bonus** choisis au point d'étape 2 (maîtrise par recette, photo du plat, classement partagé, sons…)
 
 ---

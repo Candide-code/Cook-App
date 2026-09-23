@@ -2,7 +2,9 @@
 
 Tous les sprites font **32×32 px**, fond transparent, en PNG. Noms de fichiers en minuscules, sans accents ni espaces (`pain-de-mie.png`).
 
-Source du pack : `pack pixel art/food icon pack 32x32/` ([Darina Grant](https://darinagrant.itch.io/pixel-art-food-icon-pack-32x32), gratuit, usage libre).
+Sources :
+- Pack nourriture : `pack pixel art/food icon pack 32x32/` ([Darina Grant](https://darinagrant.itch.io/pixel-art-food-icon-pack-32x32), gratuit, usage libre).
+- Pack légumes : `pack pixel art/vegetables/` ([Quipinny](https://quipinny.itch.io/pixelartvegetablespack), licence à confirmer).
 
 ## Ingrédients (`CODE/assets/sprites/ingredients/`)
 
@@ -19,14 +21,14 @@ Source du pack : `pack pixel art/food icon pack 32x32/` ([Darina Grant](https://
 | Beurre | `beurre.png` | ✏️ à dessiner |
 | Poivre | `poivre.png` | ✏️ à dessiner (partir de `sel.png` en changeant les couleurs) |
 | Huile | `huile.png` | ✏️ à dessiner |
-| Ail | `ail.png` | ✏️ à dessiner |
-| Oignon | `oignon.png` | ✏️ à dessiner |
-| Carotte | `carotte.png` | ✏️ à dessiner |
-| Pomme de terre | `pomme-de-terre.png` | ✏️ à dessiner |
-| Tomate | `tomate.png` | ✏️ à dessiner |
+| Ail | `ail.png` | ✅ pack légumes |
+| Oignon | `oignon.png` | ✅ pack légumes |
+| Carotte | `carotte.png` | ✅ pack légumes |
+| Pomme de terre | `pomme-de-terre.png` | ✅ pack légumes |
+| Tomate | `tomate.png` | ✅ pack légumes |
 | Basilic | `basilic.png` | ✏️ à dessiner |
 | Pâtes | `pates.png` | ✏️ à dessiner |
-| Petits pois | `petits-pois.png` | ✏️ à dessiner |
+| Petits pois | `petits-pois.png` | ✅ pack légumes |
 | Sauce soja | `sauce-soja.png` | ✏️ à dessiner |
 | Lardons | `lardons.png` | ✏️ à dessiner |
 | Tablette de curry | `curry.png` | ✏️ à dessiner |

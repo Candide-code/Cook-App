@@ -41,6 +41,8 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
    - **Cuisson :** minuteur intégré (ex. « Cuire 10 min »), avec un bouton pour lancer le décompte.
 3. **À la fin :** bouton « J'ai fini », XP gagnée, level up éventuel.
 
+**Plateau d'ingrédients :** uniquement les ingrédients de la recette, pas de pièges venus d'autres plats (ex. pas de poulet dans l'omelette). Une erreur = prendre un ingrédient de la recette au mauvais moment.
+
 **Erreurs (mauvais ingrédient) :**
 - Pas de pénalité (pas de perte d'XP ni d'étoiles).
 - L'écran tremble, et le téléphone vibre quand c'est possible.
