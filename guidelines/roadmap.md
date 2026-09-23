@@ -51,9 +51,9 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
 - [x] Maîtrise par recette : rangs Bronze / Argent / Or / Platine, bordure de carte, bonus d'XP, message au passage de rang
 - [ ] Avant le test en cuisine :
   - [x] L'écran reste allumé pendant la recette (Wake Lock)
-  - [ ] Minuteur fiable même écran éteint ou appli changée
-  - [ ] Bip à la fin du minuteur
-  - [ ] Confirmation avant de quitter une recette (✕)
+  - [x] Minuteur fiable même écran éteint ou appli changée
+  - [x] Bip à la fin du minuteur
+  - [x] Confirmation avant de quitter une recette (✕)
   - [ ] Bouton « étape précédente »
 - [ ] Tester l'omelette en vraie cuisine
 - [ ] Ajouter les recettes une par une : pâtes tomate, croque-monsieur, riz sauté, carbonara, curry japonais
