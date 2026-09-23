@@ -88,6 +88,18 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 - Rythme visé : environ 10 repas pour débloquer les 6 recettes, en mélangeant découvertes et recettes refaites.
 - Chiffres à réajuster au point d'étape 1 si besoin.
 
+**Maîtrise par recette** (plus on refait une recette, plus elle rapporte) :
+
+| Rang | Bronze | Argent | Or | Platine |
+|---|---|---|---|---|
+| Recette faite | 1 fois | 5 fois | 10 fois | 20 fois |
+| Bonus d'XP | +5 % | +10 % | +25 % | +50 % |
+| Bordure de la carte | liseré bronze | + 4 coins pixel | + double bordure et 2 petites gemmes | + 2 grandes gemmes et reflets (pas d'animation) |
+
+- Le bonus est celui du rang déjà atteint : il compte à partir de la fois suivante.
+- Il se multiplie avec les autres : `XP gagnée = arrondi(base × découverte × bonus d'écart × bonus de rang)`.
+- Quand on passe un rang, un message l'annonce en fin de recette. Le rang et la progression vers le suivant sont affichés sur l'écran de préparation.
+
 ### Ce qu'on débloque
 - **Des recettes**, selon le niveau (voir tableau ci-dessus).
 - **Un titre par niveau** : Commis → Apprenti → Cuistot → Chef de partie → Sous-chef → Chef → Chef étoilé → …
@@ -213,5 +225,4 @@ _Écrans validés pour démarrer, ajustables au point d'étape 1._
 ## Plus tard (hors v1)
 _Les idées qui arrivent pendant le dev vont ici._
 - Photo du plat pour valider une recette (bonus d'XP, galerie de ses plats)
-- Maîtrise par recette : Bronze (1 fois), Argent (3 fois), Or (5 fois)
 - Classement partagé entre potes (nécessite une base de données en ligne, par exemple Supabase ou Firebase)
