@@ -10,18 +10,18 @@ Mini-jeu 2D où l'on prépare de vraies recettes faciles en manipulant les ingr�
 ## Phase 0 : On discute du projet (avant de coder)
 
 ### A. Fonctionnalités
-- [ ] Qui joue ? Sur ordi, sur téléphone, ou les deux ?
-- [ ] Quelles recettes, combien au départ, quel niveau de difficulté ?
-- [ ] Comment on joue une recette : clic, glisser-déposer, mini-jeux ?
-- [ ] Règles d'XP : combien par recette, combien pour passer un niveau, étoiles, bonus ?
-- [ ] Ce qu'on débloque : recettes seulement, ou aussi ustensiles, titres, badges ?
-- [ ] Lien avec la vraie cuisine : recette affichée, bonus si on la fait en vrai ?
+- [x] Qui joue ? Sur ordi, sur téléphone, ou les deux ?
+- [x] Quelles recettes, combien au départ, quel niveau de difficulté ?
+- [x] Comment on joue une recette : clic, glisser-déposer, mini-jeux ?
+- [x] Règles d'XP : combien par recette, combien pour passer un niveau, étoiles, bonus ?
+- [x] Ce qu'on débloque : recettes seulement, ou aussi ustensiles, titres, badges ?
+- [x] Lien avec la vraie cuisine : recette affichée, bonus si on la fait en vrai ?
 
 ### B. Design
-- [ ] Ambiance : mignon et coloré, épuré, rétro pixel art, réaliste ?
-- [ ] Visuels 2D : emojis, dessins CSS/SVG, ou images ?
-- [ ] Couleurs et police
-- [ ] Liste des écrans, avec un croquis rapide de chacun
+- [x] Ambiance : mignon et coloré, épuré, rétro pixel art, réaliste ?
+- [x] Visuels 2D : emojis, dessins CSS/SVG, ou images ?
+- [x] Couleurs et police
+- [x] Liste des écrans, avec un croquis rapide de chacun
 
 **Terminé quand :** on a une liste de fonctionnalités validée (v1 et plus tard) et une direction visuelle claire.
 
