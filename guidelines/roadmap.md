@@ -29,7 +29,7 @@ App qui gamifie la vraie cuisine : on suit des recettes faciles pas à pas en ma
 ---
 
 ## Phase 1 : Les fondations
-- [ ] **1. Structure du projet** : `index.html`, `style.css`, `game.js` reliés entre eux, et un dossier `assets/sprites/`
+- [ ] **1. Structure du projet** : dossier `CODE/` avec `index.html`, `main.js`, un sous-dossier par fonctionnalité (`base/`, `joueur/`, `recettes/`, `accueil/`, `preparation/`, `cuisine/`, `fin-recette/`, `sauvegarde/`) et `assets/sprites/`
   - *Terminé quand :* la page s'ouvre et un `console.log` s'affiche dans la console (F12)
 - [ ] **2. Le style pixel de base** : police pixel, palette Sweetie 16 en variables CSS, thème clair et sombre automatique, `image-rendering: pixelated`, cadres façon RPG
   - *CSS découvert :* variables CSS, `prefers-color-scheme`
