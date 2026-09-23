@@ -220,6 +220,37 @@ Les 16 couleurs de Sweetie 16 : `#1a1c2c` `#5d275d` `#b13e53` `#ef7d57` `#ffcd75
 └──────────────────────────┘
 ```
 
+**Mise à jour pendant la tranche verticale : l'accueil devient un menu.** L'accueil garde le profil en haut, puis deux gros boutons : **RECETTES** (la grille décrite ci-dessus, sur son propre écran avec ←) et **GRIMOIRE**.
+```
+┌──────────────────────────┐
+│ [avatar] Niv. 3  Cuistot │
+│ XP ▓▓▓▓▓▓▓░░░  78/109    │
+├──────────────────────────┤
+│ ┌──────────────────────┐ │
+│ │ RECETTES ▶           │ │
+│ │ Choisir un plat      │ │
+│ └──────────────────────┘ │
+│ ┌──────────────────────┐ │
+│ │ GRIMOIRE ▶           │ │
+│ │ Relire les recettes  │ │
+│ └──────────────────────┘ │
+└──────────────────────────┘
+```
+
+**5. Grimoire** : une simple liste, comme la table des matières d'un livre. Juste le nom des recettes déjà cuisinées, « ??? » pour les autres, et le compteur de découvertes. Pas de rang, de bordure de maîtrise ni de nombre de fois : ça reste sur l'écran Recettes. On touche un nom pour ouvrir la fiche : ★, temps, ingrédients avec quantités, ustensiles, étapes, et un bouton « Cuisiner » qui mène à la préparation. Le récap de fin de recette affiche le même contenu.
+```
+┌──────────────────────────┐
+│ ←  Grimoire              │
+│ 1 / 6 recettes découv.   │
+│ ┌──────────────────────┐ │
+│ │ Omelette au fromage ▶│ │
+│ └──────────────────────┘ │
+│ ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐ │
+│ ╎ ???                  ╎ │
+│ └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘ │
+└──────────────────────────┘
+```
+
 _Écrans validés pour démarrer, ajustables au point d'étape 1._
 
 ## Plus tard (hors v1)
