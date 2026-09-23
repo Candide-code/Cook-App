@@ -29,11 +29,11 @@ App qui gamifie la vraie cuisine : on suit des recettes faciles pas à pas en ma
 ---
 
 ## Phase 1 : Les fondations
-- [ ] **1. Structure du projet** : dossier `CODE/` avec `index.html`, `main.js`, un sous-dossier par fonctionnalité (`base/`, `joueur/`, `recettes/`, `accueil/`, `preparation/`, `cuisine/`, `fin-recette/`, `sauvegarde/`) et `assets/sprites/`
+- [x] **1. Structure du projet** : dossier `CODE/` avec `index.html`, `main.js`, un sous-dossier par fonctionnalité (`base/`, `joueur/`, `recettes/`, `accueil/`, `preparation/`, `cuisine/`, `fin-recette/`, `sauvegarde/`) et `assets/sprites/`
   - *Terminé quand :* la page s'ouvre et un `console.log` s'affiche dans la console (F12)
-- [ ] **2. Le style pixel de base** : police pixel, palette Sweetie 16 en variables CSS, thème clair et sombre automatique, `image-rendering: pixelated`, cadres façon RPG
+- [x] **2. Le style pixel de base** : police pixel, palette Sweetie 16 en variables CSS, thème clair et sombre automatique, `image-rendering: pixelated`, cadres façon RPG
   - *CSS découvert :* variables CSS, `prefers-color-scheme`
-- [ ] **3. Les premiers sprites** : trouver un pack « pixel food » 32×32 gratuit sur itch.io (licence vérifiée) et ranger les sprites des ingrédients de la v1
+- [x] **3. Les premiers sprites** : trouver un pack « pixel food » 32×32 gratuit sur itch.io (licence vérifiée) et ranger les sprites des ingrédients de la v1
 - [ ] **4. Maquette statique de l'accueil** : en-tête joueur (avatar, niveau, titre, barre d'XP) et cartes de recettes, en HTML/CSS, pensée mobile d'abord
 
 ## Phase 2 : Les données

@@ -105,7 +105,9 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 ### Visuels (ingrédients, ustensiles…)
 - **Pixel art**, en mélangeant des packs gratuits et des dessins faits maison.
 - **Sprites en 32×32**, affichés agrandis (×2 ou ×3) avec `image-rendering: pixelated`.
-- Packs : chercher « pixel food » / « pixel kitchen » sur itch.io (gratuits), vérifier la licence, garder un style et une taille cohérents.
+- **Gratuit autant que possible** : pack gratuit + dessins maison pour ce qui manque, plutôt qu'un pack payant.
+- Pack de départ : [Pixel Art food icon pack 32x32](https://darinagrant.itch.io/pixel-art-food-icon-pack-32x32) (Darina Grant, gratuit, usage libre).
+- En attendant d'avoir tous les sprites : **sprites temporaires** (carré de couleur avec l'initiale), remplacés au fur et à mesure.
 - Dessins maison (ustensiles, avatar, logo) : Piskel (gratuit, navigateur) ou Aseprite.
 
 ### Police
