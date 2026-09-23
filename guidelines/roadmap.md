@@ -34,7 +34,23 @@ App qui gamifie la vraie cuisine : on suit des recettes faciles pas à pas en ma
 - [x] **2. Le style pixel de base** : police pixel, palette Sweetie 16 en variables CSS, thème clair et sombre automatique, `image-rendering: pixelated`, cadres façon RPG
   - *CSS découvert :* variables CSS, `prefers-color-scheme`
 - [x] **3. Les premiers sprites** : trouver un pack « pixel food » 32×32 gratuit sur itch.io (licence vérifiée) et ranger les sprites des ingrédients de la v1
-- [ ] **4. Maquette statique de l'accueil** : en-tête joueur (avatar, niveau, titre, barre d'XP) et cartes de recettes, en HTML/CSS, pensée mobile d'abord
+- [x] **4. Maquette statique de l'accueil** : en-tête joueur (avatar, niveau, titre, barre d'XP) et cartes de recettes, en HTML/CSS, pensée mobile d'abord
+
+## 🍳 Tranche verticale : l'omelette jouable de A à Z
+Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recettes, on rend **une seule recette** jouable de bout en bout pour tester le process en vrai, puis on ajoute les recettes une par une.
+
+- [x] Omelette décrite en données (10 étapes, ingrédients, ustensiles)
+- [x] Accueil généré en JS, en-tête avec niveau / titre / XP réels
+- [x] Formules RPG (`joueur/xp.js`)
+- [x] Écran de préparation (cases à cocher)
+- [x] Écran de cuisine : étapes « ajouter » (plateau + 3 pièges), « action » (taps + jauge), « cuisson » (minuteur)
+- [x] Erreurs : tremblement, vibration, aide à la 3e erreur
+- [x] Fin de recette : « J'ai fini », XP, level up, récap
+- [x] Sauvegarde (`localStorage`)
+- [ ] Tester l'omelette en vraie cuisine
+- [ ] Ajouter les recettes une par une : pâtes tomate, croque-monsieur, riz sauté, carbonara, curry japonais
+
+Les étapes ci-dessous restent la référence ; celles couvertes par la tranche verticale seront cochées une fois validées en vrai.
 
 ## Phase 2 : Les données
 - [ ] **5. Décrire une recette en JS** : nom, sprite, difficulté (★), niveau requis, temps, ingrédients avec quantités, ustensiles, étapes (types « ajouter », « action », « cuisson »)

@@ -121,14 +121,16 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 
 | Rôle | Clair | Sombre |
 |---|---|---|
-| Fond | `#f4f4f4` | `#1a1c2c` |
-| Cartes / boîtes | `#94b0c2` | `#333c57` |
+| Fond | `#c5d1b5` (vert sauge) | `#1a1c2c` |
+| Cartes / boîtes | `#f2ebd3` (crème) | `#333c57` |
 | Texte | `#1a1c2c` | `#f4f4f4` |
 | Texte secondaire | `#566c86` | `#94b0c2` |
 | Accent (boutons) | `#ef7d57` | `#ef7d57` |
 | XP / niveau | `#ffcd75` | `#ffcd75` |
 | Réussite | `#38b764` | `#a7f070` |
 | Erreur | `#b13e53` | `#b13e53` |
+
+Ajusté à l'étape 4 (comparaison de 5 duos) : en thème clair, fond vert sauge `#c5d1b5` et cartes crème `#f2ebd3` (hors palette tous les deux). Le blanc en fond était trop plat, le sable jurait avec les cartes gris-bleu, le gris-bleu doux a aussi été essayé.
 
 Les 16 couleurs de Sweetie 16 : `#1a1c2c` `#5d275d` `#b13e53` `#ef7d57` `#ffcd75` `#a7f070` `#38b764` `#257179` `#29366f` `#3b5dc9` `#41a6f6` `#73eff7` `#f4f4f4` `#94b0c2` `#566c86` `#333c57`
 
