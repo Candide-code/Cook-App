@@ -56,8 +56,13 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
   - [x] Bip à la fin du minuteur
   - [x] Confirmation avant de quitter une recette (✕)
   - [x] Bouton « étape précédente »
-- [ ] Tester l'omelette en vraie cuisine
-- [ ] Ajouter les recettes une par une : pâtes tomate, croque-monsieur, riz sauté, carbonara, curry japonais
+- [ ] *(Optionnel, plus tard)* Tester l'omelette en vraie cuisine
+- [ ] Ajouter les recettes **une par une** (on finit et on teste une recette avant de passer à la suivante) :
+  - [ ] Pâtes tomate
+  - [ ] Croque-monsieur
+  - [ ] Riz sauté
+  - [ ] Carbonara
+  - [ ] Curry japonais
 
 Les étapes ci-dessous restent la référence ; celles couvertes par la tranche verticale seront cochées une fois validées en vrai.
 

@@ -237,7 +237,7 @@ Les 16 couleurs de Sweetie 16 : `#1a1c2c` `#5d275d` `#b13e53` `#ef7d57` `#ffcd75
 └──────────────────────────┘
 ```
 
-**5. Grimoire** : une simple liste, comme la table des matières d'un livre. Juste le nom des recettes déjà cuisinées, « ??? » pour les autres, et le compteur de découvertes. Pas de rang, de bordure de maîtrise ni de nombre de fois : ça reste sur l'écran Recettes. On touche un nom pour ouvrir la fiche : ★, temps, ingrédients avec quantités, ustensiles, étapes, et un bouton « Cuisiner » qui mène à la préparation. Le récap de fin de recette affiche le même contenu.
+**5. Grimoire** : une simple liste, comme la table des matières d'un livre. Juste le nom des recettes déjà cuisinées, « ??? » pour les autres, et le compteur de découvertes. Pas de rang, de bordure de maîtrise ni de nombre de fois : ça reste sur l'écran Recettes. On touche un nom pour ouvrir la fiche : ★, temps, ingrédients avec quantités, ustensiles, étapes, et un bouton « Cuisiner » qui mène à la préparation. Le récap de fin de recette affiche le même contenu. Quand une recette est cuisinée pour la 1re fois, un badge « NEW! » apparaît sur le bouton GRIMOIRE et sur la ligne de la recette, jusqu'à ce qu'on ouvre sa fiche.
 ```
 ┌──────────────────────────┐
 │ ←  Grimoire              │
