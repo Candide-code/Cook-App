@@ -79,7 +79,10 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 |---|---|---|---|---|
 | XP gagnée | 100 % | 75 % | 50 % | 25 % |
 
-`XP gagnée = arrondi(base × (découverte ? 1,5 : 1) × bonus d'écart)`, avec un bonus d'écart de 100 % dès le niveau 6
+`XP gagnée = arrondi(base × (découverte ? 1,5 : 1) × bonus d'écart × bonus de rang × bonus recette longue)`, avec un bonus d'écart de 100 % dès le niveau 6
+
+- **Niveau de référence pour l'écart** (2026-09-25) : le plus grand entre le niveau de déblocage et le **nombre d'étoiles** de la recette. Une recette difficile débloquée tôt n'est pas punie comme une recette facile (cinnamon roll ★★★★ débloqué au niveau 1 : référence 4 ; au niveau 4, 105 XP au lieu de 42).
+- **Bonus recette longue** : **+25 %** pour une recette de **2 h ou plus** (champ « temps »). Affiché en fin de recette avec les autres bonus.
 
 **Courbe de niveau** (revue le 2026-09-25) : +25 % par niveau jusqu'au niveau 5, puis +10 XP par niveau, plafonnée à 200 XP.
 
