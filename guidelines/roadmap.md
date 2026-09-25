@@ -104,34 +104,34 @@ Décidé le 2026-09-25 (détails dans le cadrage, « Recettes custom »). Avanc�
 - [x] **9. Modifier / supprimer** une recette custom (boutons sur l’écran de préparation ; l’assistant s’ouvre pré-rempli)
 - [x] **10. Grimoire : filtre** « Mes recettes » / « Recettes du jeu »
 
-Les étapes ci-dessous restent la référence ; celles couvertes par la tranche verticale seront cochées une fois validées en vrai.
+Les étapes ci-dessous sont la roadmap d'origine. Celles réalisées pendant la tranche verticale ont été cochées le 2026-09-25 (code en place et utilisé). Restent : les 6 recettes de la v1 (en cours, voir plus haut), la phase 6 (interactif et pixel), les tests téléphone et les points d'étape.
 
 
 ## Phase 2 : Les données
-- [ ] **5. Décrire une recette en JS** : nom, sprite, difficulté (★), niveau requis, temps, ingrédients avec quantités, ustensiles, étapes (types « ajouter », « action », « cuisson »)
+- [x] **5. Décrire une recette en JS** : nom, sprite, difficulté (★), niveau requis, temps, ingrédients avec quantités, ustensiles, étapes (types « ajouter », « action », « cuisson »)
   - *JS découvert :* variables, objets `{}`, tableaux `[]`
-- [ ] **6. Les 6 recettes de la v1** : omelette, pâtes tomate, croque-monsieur, riz sauté, carbonara, curry japonais
-- [ ] **7. Afficher les recettes depuis le JS** : les cartes de l'accueil sont générées à partir de la liste
+- [ ] **6. Les 6 recettes de la v1** *(en cours : omelette, pâtes, croque écrites ; carbonara, riz sauté, curry à venir)* : omelette, pâtes tomate, croque-monsieur, riz sauté, carbonara, curry japonais
+- [x] **7. Afficher les recettes depuis le JS** : les cartes de l'accueil sont générées à partir de la liste
   - *JS découvert :* boucles, `document.querySelector`, `innerHTML`
 
 ## Phase 3 : XP et niveaux (logique RPG)
-- [ ] **8. Le joueur** : un objet `joueur` avec son XP et le compteur de chaque recette faite
-- [ ] **9. Les formules RPG** : XP pour passer un niveau (`70 × 1,25^(niveau − 1)`), niveau à partir de l'XP, XP gagnée (base selon la difficulté, découverte ×1,5, bonus d'écart de niveau)
+- [x] **8. Le joueur** : un objet `joueur` avec son XP et le compteur de chaque recette faite
+- [x] **9. Les formules RPG** : XP pour passer un niveau (`70 × 1,25^(niveau − 1)`), niveau à partir de l'XP, XP gagnée (base selon la difficulté, découverte ×1,5, bonus d'écart de niveau)
   - *JS découvert :* fonctions, calculs, conditions `if`, `Math.round`, `Math.pow`
-- [ ] **10. En-tête dynamique** : vrai niveau, titre (Commis → Apprenti → …) et barre d'XP
-- [ ] **11. Recettes verrouillées** : carte masquée (🔒, « ??? », niveau requis) et badge « NEW! » sur les recettes jamais faites
+- [x] **10. En-tête dynamique** : vrai niveau, titre (Commis → Apprenti → …) et barre d'XP
+- [x] **11. Recettes verrouillées** : carte masquée (🔒, « ??? », niveau requis) et badge « NEW! » sur les recettes jamais faites
   - *Test :* on change l'XP à la main pour voir les recettes se débloquer
 
 ## Phase 4 : Les écrans de recette
-- [ ] **12. Naviguer entre les écrans** : accueil → préparation → cuisine → fin, avec les boutons ← et ✕ pour revenir
+- [x] **12. Naviguer entre les écrans** : accueil → préparation → cuisine → fin, avec les boutons ← et ✕ pour revenir
   - *JS découvert :* événements `click`, afficher/cacher des éléments
-- [ ] **13. Écran de préparation** : ingrédients et ustensiles à cocher, bouton « Commencer »
-- [ ] **14. Écran de cuisine** : progression des étapes (« Étape 2/6 »), sprite de l'ustensile, consigne dans une boîte de dialogue façon RPG
-- [ ] **15. Étape « ajouter »** : plateau avec seulement les ingrédients de la recette ; cliquer sur le bon ingrédient valide l'étape
+- [x] **13. Écran de préparation** : ingrédients et ustensiles à cocher, bouton « Commencer »
+- [x] **14. Écran de cuisine** : progression des étapes (« Étape 2/6 »), sprite de l'ustensile, consigne dans une boîte de dialogue façon RPG
+- [x] **15. Étape « ajouter »** : plateau avec seulement les ingrédients de la recette ; cliquer sur le bon ingrédient valide l'étape
   - *C'est le cœur du jeu.*
-- [ ] **16. Les erreurs** : pas de pénalité ; l'écran tremble, le téléphone vibre (Android), et à la 3e erreur un message indique le bon ingrédient
-- [ ] **17. Étape « action »** : taper l'ustensile plusieurs fois (remuer, retourner…), avec une jauge
-- [ ] **18. Étape « cuisson »** : minuteur intégré avec un bouton pour lancer le décompte
+- [x] **16. Les erreurs** : pas de pénalité ; l'écran tremble, le téléphone vibre (Android), et à la 3e erreur un message indique le bon ingrédient
+- [x] **17. Étape « action »** : taper l'ustensile plusieurs fois (remuer, retourner…), avec une jauge
+- [x] **18. Étape « cuisson »** : minuteur intégré avec un bouton pour lancer le décompte
   - *JS découvert :* `setInterval`, gestion du temps
 
 **Résultat : on peut suivre une recette de bout en bout.**
@@ -148,10 +148,10 @@ Les étapes ci-dessous restent la référence ; celles couvertes par la tranche 
 ---
 
 ## Phase 5 : Récompenses et progression
-- [ ] **19. Fin de recette** : bouton « J'ai fini », XP gagnée, barre d'XP qui se remplit
-- [ ] **20. Level up** : annonce dans une boîte de dialogue, nouveau titre, recette débloquée
-- [ ] **21. Récap de la recette** : toutes les étapes avec les quantités, pour la refaire
-- [ ] **22. Sauvegarde** : la progression reste après un rechargement de la page
+- [x] **19. Fin de recette** : bouton « J'ai fini », XP gagnée, barre d'XP qui se remplit
+- [x] **20. Level up** : annonce dans une boîte de dialogue, nouveau titre, recette débloquée
+- [x] **21. Récap de la recette** : toutes les étapes avec les quantités, pour la refaire
+- [x] **22. Sauvegarde** : la progression reste après un rechargement de la page
   - *JS découvert :* `localStorage`, `JSON.stringify` / `JSON.parse`
 
 ## Phase 6 : Le côté interactif 2D et pixel
