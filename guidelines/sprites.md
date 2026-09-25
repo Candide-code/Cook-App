@@ -1,10 +1,14 @@
 # Sprites : ce qu'on a et ce qu'il reste à dessiner
 
-Tous les sprites font **32×32 px**, fond transparent, en PNG. Noms de fichiers en minuscules, sans accents ni espaces (`pain-de-mie.png`).
+Tous les sprites font **32×32 px** (sauf les légumes et herbes : **16×16**, affichés à la même taille, donc aux pixels deux fois plus gros), fond transparent, en PNG. Noms de fichiers en minuscules, sans accents ni espaces (`pain-de-mie.png`).
 
 Sources :
 - Pack nourriture : `pack pixel art/food icon pack 32x32/` ([Darina Grant](https://darinagrant.itch.io/pixel-art-food-icon-pack-32x32), gratuit, usage libre).
-- Pack légumes : `pack pixel art/vegetables/` ([Quipinny](https://quipinny.itch.io/pixelartvegetablespack), licence à confirmer).
+- Pack légumes et herbes : `pack pixel art/vegetables/99_vegetables_and_herbs/` ([« 99 vegetables and herbs », keifoopx](https://keifoopx.itch.io/99-vegetables-and-herbs), 16×16, gratuit, usage commercial et non commercial d’après la page ; itch.io bloque la vérification automatique). Adopté le 2026-09-25.
+- Pack fruits et fruits à coque : `pack pixel art/fruits/99_fruits_and_nuts/` ([« 99 fruits and nuts », keifoopx](https://keifoopx.itch.io/99fruitsandnuts), 16×16, même auteur et même licence libre que les légumes). Ajouté le 2026-09-25.
+- Pack ingrédients variés : `pack pixel art/ingredients random/99_ingredients/` ([« 99 various ingredients », keifoopx](https://keifoopx.itch.io/99-various-ingredients), 16×16 : légumineuses, fromages, œufs, céréales, champignons, algues, épices, eau, lait). Ajouté le 2026-09-25.
+- ~~Pack légumes Quipinny~~ : retiré du jeu le 2026-09-25 (licence jamais confirmée). ⚠️ Ses anciennes images restent dans l’historique Git du dépôt public.
+- Pack plats : [« Pixel Food », ghostpixxells](https://ghostpixxells.itch.io/pixelfood), `pack pixel art/plats/`, 102 images 32×32, gratuit, usage libre d’après la page.
 - Personnage : `pack pixel art/characters/char_a_p1/` ([Mana Seed Character Base, démo gratuite](https://seliel-the-shaper.itch.io/character-base), Seliel the Shaper, usage commercial ou non autorisé). Planches de 512×512 en cases de 64×64 : on n'utilise que la 1re case (pose de face). Exception au format 32×32.
 
 ## Personnage (`CODE/assets/sprites/chef/`)
@@ -28,7 +32,7 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 
 | Ingrédient | Fichier | Statut |
 |---|---|---|
-| Œufs | `oeuf.png` | ✅ pack (œuf au plat, à remplacer par un œuf entier ?) |
+| Œufs | `oeuf.png` | ✅ pack ingrédients variés (œuf blanc entier, remplace l’œuf au plat de Darina) |
 | Fromage râpé | `fromage.png` | ✅ pack |
 | Parmesan | `fromage.png` | ✅ pack (même sprite pour l'instant) |
 | Sel | `sel.png` | ✅ pack |
@@ -37,20 +41,17 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | Poulet | `poulet.png` | ✅ pack |
 | Jambon | `jambon.png` | ✅ pack |
 | Beurre | `beurre.png` | ✏️ à dessiner |
-| Poivre | `poivre.png` | ✏️ à dessiner (partir de `sel.png` en changeant les couleurs) |
 | Huile | `huile.png` | ✏️ à dessiner |
-| Ail | `ail.png` | ✅ pack légumes |
-| Oignon | `oignon.png` | ✅ pack légumes |
-| Carotte | `carotte.png` | ✅ pack légumes |
-| Pomme de terre | `pomme-de-terre.png` | ✅ pack légumes |
-| Tomate | `tomate.png` | ✅ pack légumes |
-| Basilic | `basilic.png` | ✏️ à dessiner |
+| Légumes (87) : tous ceux du pack « 99 vegetables and herbs » (ail, carotte, oignon, pomme de terre, tomate, courgette, épinards, salade…) | `[identifiant].png` (voir `recettes/ingredients.js`) | ✅ pack légumes 16×16 |
+| Herbes (12) : basilic, persil, menthe, ciboulette, aneth, ail des ours, gingembre, shiso… | `[identifiant].png` | ✅ même pack |
+| Légumes absents des packs : avocat, céleri-rave, jalapeño, oignon nouveau, patate douce, pois gourmands, poivrons jaune et rouge, radis blanc | — | ✏️ sprite temporaire (à trouver ou dessiner) |
+| Fruits (51) et fruits à coque (9) | `[identifiant].png` | ✅ pack fruits 16×16 (variantes tranchées / ouvertes non utilisées) |
+| Champignons (15), légumineuses (14), céréales, fromages (15), lait et yaourts, épices (cumin, muscade, safran, vanille…), algues, eau | `[identifiant].png` | ✅ pack ingrédients variés 16×16 (œufs de couleur, œufs fêlés et champignons « dessin animé » non utilisés) |
+| Petits pois, maïs, poivre, eau | `petits-pois.png`, `mais.png`, `poivre.png`, `eau.png` | ✅ complétés par le pack ingrédients variés |
 | Pâtes | `pates.png` | ✏️ à dessiner |
-| Petits pois | `petits-pois.png` | ✅ pack légumes |
 | Sauce soja | `sauce-soja.png` | ✏️ à dessiner |
 | Lardons | `lardons.png` | ✏️ à dessiner |
 | Tablette de curry | `curry.png` | ✏️ à dessiner |
-| Eau | `eau.png` | ✏️ à dessiner |
 
 ## Ustensiles (`CODE/assets/sprites/ustensiles/`)
 
@@ -58,18 +59,21 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 |---|---|---|
 | Poêle | `poele.png` | ✏️ à dessiner |
 | Casserole | `casserole.png` | ✏️ à dessiner |
-| Bol | `bol.png` | ✏️ à dessiner |
+| Bol | `bol.png` | ✅ pack plats (`04_bowl`) |
+| Assiette | `assiette.png` | ✅ pack plats (`01_dish`) |
 | Plaque de four | `plaque.png` | ✏️ à dessiner |
+| Tous les autres ustensiles du catalogue (51) : poêles et casseroles, plats et moules, bols et mesures, petits outils, électroménager | `[identifiant].png` (voir `ustensiles` dans `recettes/ingredients.js`) | ✏️ à trouver ou dessiner (sprite temporaire en attendant) |
 
 ## Plats (`CODE/assets/sprites/plats/`)
 
 | Plat | Fichier | Statut |
 |---|---|---|
-| Omelette | `omelette.png` | ✏️ à dessiner |
-| Pâtes tomate | `pates-tomate.png` | ✏️ à dessiner |
-| Croque-monsieur | `croque-monsieur.png` | ✏️ à dessiner (base possible : `Sandwich.png` du pack) |
+| Omelette | `omelette.png` | ✅ pack plats (`74_omlet_dish`) |
+| Pâtes tomate | `pates-tomate.png` | ✅ pack plats (`94_spaghetti`) |
+| Croque-monsieur | `croque-monsieur.png` | ✅ pack plats (`93_sandwich_dish`), branché quand la recette sera ajoutée |
 | Riz sauté | `riz-saute.png` | ✏️ à dessiner (base possible : `Bowl of rice.png` du pack) |
 | Carbonara | `carbonara.png` | ✏️ à dessiner |
-| Curry japonais | `curry-japonais.png` | ✏️ à dessiner |
+| Curry japonais | `curry-japonais.png` | ✅ pack plats (`33_curry_dish`), branché quand la recette sera ajoutée |
+| Cookies | `cookies.png` | ✅ pack plats (`29_cookies_dish`), branché quand la recette sera ajoutée |
 
 En attendant, chaque sprite manquant est remplacé par un sprite temporaire (`.sprite-temp`).

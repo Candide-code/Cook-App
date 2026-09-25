@@ -1,4 +1,4 @@
-# Roadmap : jeu de cuisine avec XP et niveaux
+# Roadmap : Underplate, jeu de cuisine avec XP et niveaux
 
 App qui gamifie la vraie cuisine : on suit des recettes faciles pas à pas en manipulant les ingrédients dans une interface pixel art 2D. Chaque recette cuisinée rapporte de l'XP, fait monter de niveau (logique RPG) et débloque de nouveaux plats.
 
@@ -49,6 +49,8 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
 - [x] Fin de recette : « J'ai fini », XP, level up, récap
 - [x] Sauvegarde (`localStorage`)
 - [x] Maîtrise par recette : rangs Bronze / Argent / Or / Platine, bordure de carte, bonus d'XP, message au passage de rang
+- [x] Progression revue (2026-09-25) : titres par paliers (5, 10, 18, 30, 50, 75, 100, 125, 150), courbe d'XP plafonnée à 200 XP par niveau (niveau 100 ≈ 2 ans), malus d'écart supprimé dès le niveau 6
+- [x] Recettes rangées en SALÉ / SUCRÉ : menu à 2 boutons avant la grille (champ `categorie` dans chaque recette)
 - [x] Accueil en menu (RECETTES / GRIMOIRE) + Grimoire : liste des recettes déjà cuisinées (« ??? » pour les autres) et leur fiche complète
 - [x] Avant le test en cuisine :
   - [x] L'écran reste allumé pendant la recette (Wake Lock)
@@ -58,11 +60,12 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
   - [x] Bouton « étape précédente »
 - [ ] *(Optionnel, plus tard)* Tester l'omelette en vraie cuisine
 - [ ] Ajouter les recettes **une par une** (on finit et on teste une recette avant de passer à la suivante) :
-  - [ ] Pâtes tomate
+  - [x] Pâtes tomate
   - [ ] Croque-monsieur
   - [ ] Riz sauté
   - [ ] Carbonara
   - [ ] Curry japonais
+  - [ ] Cookies (sucré)
 
 ## 👤 Profil : « Crée ton chef »
 Décidé le 2026-09-25 (détails dans le cadrage, « Profil et personnage »). Pack Mana Seed, sans animation pour l'instant.
@@ -78,7 +81,23 @@ Décidé le 2026-09-25 (détails dans le cadrage, « Profil et personnage »). P
   - *Pour tester comme un nouveau joueur :* ouvrir `index.html?reset` (efface la sauvegarde)
 - [ ] **Tenue de chef et coupes maison dans Piskel** : redessiner la toque, la veste, le tablier, la coupe courte, l'afro et les locs (remplace les versions temporaires)
 
+## 🧑‍🍳 CUSTOM : mes propres recettes
+Décidé le 2026-09-25 (détails dans le cadrage, « Recettes custom »). Avancé de la V2. Passe avant les cookies.
+
+- [x] **1. Données** : les recettes perso dans la sauvegarde (`joueur`), et un catalogue d'ustensiles plus large (four, plaque, fouet…)
+- [x] **2. Bouton CUSTOM** sur l'accueil + sous-menu SALÉ / SUCRÉ + grille de ses recettes avec le bouton **+**
+- [x] **3. Assistant, étape 1 : infos** (nom, ★, temps)
+- [x] **4. Assistant, étape 2 : ingrédients + quantité** (catalogue du jeu ou nom tapé)
+  - [x] Quantités aux flèches (nombre + unité), 24 légumes du pack ajoutés, ingrédients rangés par famille (sous-menu)
+- [x] **5. Assistant, étape 3 : ustensiles / électroménager**
+- [x] **6. Assistant, étape 4 : étapes typées** (Ajouter / Action / Cuisson-minuteur ⏱, + ustensile)
+- [x] **7. Assistant, étape 5 : récap + enregistrement**
+- [x] **8. Jouer une recette custom** : préparation, cuisine, minuteur, XP de la difficulté choisie
+- [x] **9. Modifier / supprimer** une recette custom (boutons sur l’écran de préparation ; l’assistant s’ouvre pré-rempli)
+- [x] **10. Grimoire : filtre** « Mes recettes » / « Recettes du jeu »
+
 Les étapes ci-dessous restent la référence ; celles couvertes par la tranche verticale seront cochées une fois validées en vrai.
+
 
 ## Phase 2 : Les données
 - [ ] **5. Décrire une recette en JS** : nom, sprite, difficulté (★), niveau requis, temps, ingrédients avec quantités, ustensiles, étapes (types « ajouter », « action », « cuisson »)
@@ -151,5 +170,5 @@ Les étapes ci-dessous restent la référence ; celles couvertes par la tranche 
 ---
 
 ## V2 (plus tard)
-- Ajout de mes propres recettes
+- ~~Ajout de mes propres recettes~~ → avancé dans la v1 (section CUSTOM)
 - Idées de la liste « Plus tard » du cadrage non faites en v1
