@@ -24,7 +24,7 @@ Décisions prises ensemble avant de coder. Ce qui est ici fait foi pour la v1.
 | # | Recette | Niveau | Temps | Technique apprise |
 |---|---|---|---|---|
 | 1 | 🍳 Omelette au fromage | 1 | 10 min | Cuire des œufs, gérer le feu |
-| 2 | 🍝 Pâtes à la sauce tomate | 1 | 15 min | Cuire des pâtes, sauce simple |
+| 2 | 🍝 Pâtes à la sauce tomate | 1 | 20 min | Cuire des pâtes, sauce simple |
 | 3 | 🥪 Croque-monsieur | 2 | 15 min | Assembler, utiliser le four |
 | 4 | 🍚 Riz sauté | 3 | 20 min | Faire sauter à feu vif |
 | 5 | 🍝 Carbonara (sans crème) | 4 | 20 min | Lier une sauce aux œufs |
@@ -102,7 +102,36 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 
 ### Ce qu'on débloque
 - **Des recettes**, selon le niveau (voir tableau ci-dessus).
-- **Un titre par niveau** : Commis → Apprenti → Cuistot → Chef de partie → Sous-chef → Chef → Chef étoilé → …
+- **Un titre par niveau**, accordé selon le genre choisi dans le profil :
+
+| Niv. | Masculin | Féminin |
+|---|---|---|
+| 1 | Commis | Commise |
+| 2 | Apprenti | Apprentie |
+| 3 | Cuistot | Cuistote |
+| 4 | Chef de partie | Cheffe de partie |
+| 5 | Sous-chef | Sous-cheffe |
+| 6 | Chef | Cheffe |
+| 7+ | Chef étoilé | Cheffe étoilée |
+
+### Profil et personnage (« Crée ton chef »)
+- **Un seul profil par téléphone**, avec un **pseudo** et un **personnage** personnalisé. Enregistré sur le téléphone avec la progression (pas de compte en ligne, pas de serveur).
+- **Genre : masculin ou féminin**, choisi dans le profil. Il change les mots, pas le dessin (le corps Mana Seed est le même, et toutes les coupes, courtes comprises, sont proposées aux deux) :
+  - le nom affiché : « Chef [pseudo] » ou « Cheffe [pseudo] » ;
+  - les titres de niveau (tableau dans « Ce qu'on débloque ») ;
+  - les accords dans les messages du jeu (« Tu te sens plus fort / forte », « Bien joué, chef / cheffe ! »…).
+- **Au premier lancement**, l'écran « Crée ton chef » s'ouvre avant l'accueil. On peut le rouvrir plus tard en touchant l'avatar dans l'en-tête.
+- **Base des persos : pack Mana Seed Character Base (démo gratuite)**, système « poupée de papier » : des couches superposées (corps, tenue, cheveux, chapeau). Choisi face à Super Retro World : un seul dessin de toque et de tablier marche sur toutes les combinaisons, et la licence est libre (pas de crédit obligatoire).
+- **Ce qu'on personnalise :**
+  - **Peau** : 11 teintes du pack.
+  - **Coupe** : 5 coupes, proposées aux deux genres : **courte**, carré, chignon, **afro**, **locs** (chignon haut attaché, deux locs sur le front, une de chaque côté du visage). L'afro et les locs restent proches de la tête : sous la toque, seuls les côtés dépassent. Le carré et le chignon viennent du pack ; la courte, l'afro et les locs (absentes du pack) sont dessinées par nous, d'abord temporaires puis dans Piskel. Pas que des cheveux lisses.
+  - **Couleur des cheveux** : 13 couleurs du pack, pour toutes les coupes. La courte, l'afro et les locs sont dessinées une fois dans les gris du modèle `v00`, puis recolorées avec les gammes du pack (`color ramps and v00.png`) pour avoir exactement les mêmes 13 couleurs.
+  - **Couleur des yeux** : noirs, marron, bleus, verts.
+  - **Toque** : oui ou non (oui par défaut).
+  - La toque doit bien tenir sur l'afro (plus volumineuse) : peut-être une toque adaptée pour cette coupe.
+  - **Couleur du tablier** : 5 couleurs de Sweetie 16 (rouge, orange, vert, bleu, noir). La toque et la veste restent blanches (c'est ce qui fait « chef »).
+- **Tenue de chef** (toque, veste, tablier) : absente du pack. D'abord une version temporaire générée en pixels et alignée sur le corps Mana Seed, puis redessinée dans Piskel.
+- **Pas d'animation pour l'instant** : on affiche seulement la pose de face, immobile.
 
 ### Téléphone
 - La vibration en cas d'erreur marche sur Android. Sur iPhone, l'écran tremble seulement (Safari bloque la vibration).
@@ -251,9 +280,34 @@ Les 16 couleurs de Sweetie 16 : `#1a1c2c` `#5d275d` `#b13e53` `#ef7d57` `#ffcd75
 └──────────────────────────┘
 ```
 
+**6. Crée ton chef** : le perso en grand au centre (pose de face, agrandi), puis le pseudo et une ligne par réglage avec des flèches ◀ ▶ pour faire défiler les choix. Le perso change en direct. Bouton « C'est parti » (au 1er lancement) qui mène à l'accueil.
+```
+┌──────────────────────────┐
+│     CRÉE TON CHEF        │
+├──────────────────────────┤
+│                          │
+│       [ perso ×4 ]       │
+│                          │
+├──────────────────────────┤
+│ Pseudo  [ Marie_____ ]   │
+│ Genre     ◀  Cheffe  ▶   │
+│ Peau      ◀   3/11   ▶   │
+│ Coupe     ◀  Carré   ▶   │
+│ Cheveux   ◀   5/13   ▶   │
+│ Yeux      ◀  Marron  ▶   │
+│ Tablier   ◀  Rouge   ▶   │
+│ Toque     ◀   Oui    ▶   │
+├──────────────────────────┤
+│     [ C'EST PARTI ▶ ]    │
+└──────────────────────────┘
+```
+
 _Écrans validés pour démarrer, ajustables au point d'étape 1._
 
 ## Plus tard (hors v1)
 _Les idées qui arrivent pendant le dev vont ici._
 - Photo du plat pour valider une recette (bonus d'XP, galerie de ses plats)
 - Classement partagé entre potes (nécessite une base de données en ligne, par exemple Supabase ou Firebase)
+- Perso qui évolue avec le niveau (toque plus haute, étoile sur le tablier…)
+- Perso animé (le pack Mana Seed a déjà la marche, la course et le saut : par exemple un saut de joie au level up)
+- Pack Super Retro World (déjà dans `pack pixel art/characters/`) pour des personnages secondaires. Licence : crédit obligatoire des 3 auteurs et interdiction de redistribuer les fichiers, attention au dépôt GitHub public.

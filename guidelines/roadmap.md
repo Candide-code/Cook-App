@@ -64,6 +64,20 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
   - [ ] Carbonara
   - [ ] Curry japonais
 
+## 👤 Profil : « Crée ton chef »
+Décidé le 2026-09-25 (détails dans le cadrage, « Profil et personnage »). Pack Mana Seed, sans animation pour l'instant.
+
+- [x] **Sprites du perso** : découper la pose de face dans les planches Mana Seed (peaux, coupes, couleurs de cheveux) et ne copier que ces petites images dans `CODE/assets/sprites/chef/`
+- [x] **Tenue de chef temporaire** : toque, veste blanche et tablier (une image par couleur), générés en pixels et alignés sur le corps
+- [x] **Coupes courte, afro et locs temporaires** : dessinées dans les gris du modèle `v00`, puis recolorées avec les gammes du pack (mêmes 13 couleurs que les autres coupes)
+- [x] **Afficher le perso** : empiler les couches (corps → yeux → veste → tablier → cheveux → toque) et le montrer dans l'en-tête de l'accueil
+  - *CSS découvert :* `position: absolute` pour superposer des images
+- [x] **Écran « Crée ton chef »** : pseudo, genre (Chef / Cheffe), flèches ◀ ▶ pour chaque réglage, perso mis à jour en direct, sauvegarde dans `joueur`
+- [x] **Masculin / féminin dans tout le jeu** : « Chef [pseudo] » / « Cheffe [pseudo] » dans l'en-tête, titres de niveau accordés, accords dans les messages (fin de recette…)
+- [x] **Au premier lancement** l'écran s'ouvre avant l'accueil ; ensuite on le rouvre en touchant l'avatar
+  - *Pour tester comme un nouveau joueur :* ouvrir `index.html?reset` (efface la sauvegarde)
+- [ ] **Tenue de chef et coupes maison dans Piskel** : redessiner la toque, la veste, le tablier, la coupe courte, l'afro et les locs (remplace les versions temporaires)
+
 Les étapes ci-dessous restent la référence ; celles couvertes par la tranche verticale seront cochées une fois validées en vrai.
 
 ## Phase 2 : Les données
