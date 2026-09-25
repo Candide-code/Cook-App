@@ -47,7 +47,7 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | PRC (plat) | `plats/prc.png` | 🟡 pack plats (`86_roastedchicken_dish`, un poulet rôti) en attendant une vraie image de poulet pané + riz + courgettes |
 | Chapelure | `chapelure.png` | ✏️ sprite temporaire |
 | Cinnamon roll (plat) | `plats/cinnamon-roll.png` | 🟡 pack plats (`12_bun_dish`, une brioche) en attendant une vraie image |
-| Levure boulangère, cannelle, cream cheese, sucre glace | `[identifiant].png` | ✏️ sprite temporaire |
+| Levure boulangère, cannelle, cream cheese, crème fraîche, sucre glace | `[identifiant].png` | ✏️ sprite temporaire |
 | Pépites de chocolat | `pepites-chocolat.png` | ✅ pack plats (`26_chocolate`, une tablette) |
 | Farine, sucre, levure chimique | `farine.png`, `sucre.png`, `levure-chimique.png` | ✏️ sprite temporaire (à trouver ou dessiner) |
 | Légumes absents des packs : avocat, céleri-rave, jalapeño, oignon nouveau, patate douce, pois gourmands, poivrons jaune et rouge, radis blanc | — | ✏️ sprite temporaire (à trouver ou dessiner) |
@@ -76,7 +76,7 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 |---|---|---|
 | Omelette | `omelette.png` | ✅ pack plats (`74_omlet_dish`) |
 | Pâtes tomate | `pates-tomate.png` | ✅ pack plats (`94_spaghetti`) |
-| Croque-monsieur | `croque-monsieur.png` | ✅ pack plats (`93_sandwich_dish`), branché quand la recette sera ajoutée |
+| Croque-monsieur | `croque-monsieur.png` | ✅ pack plats (`93_sandwich_dish`) |
 | Riz sauté | `riz-saute.png` | ✏️ à dessiner (base possible : `Bowl of rice.png` du pack) |
 | Carbonara | `carbonara.png` | ✏️ à dessiner |
 | Curry japonais | `curry-japonais.png` | ✅ pack plats (`33_curry_dish`), branché quand la recette sera ajoutée |

@@ -64,7 +64,7 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
   - [ ] Cookies (sucré, niv. 1) — écrite, en attente du test
   - [ ] PRC — poulet riz courgettes (niv. 2) — écrite, en attente du test
   - [ ] Cinnamon roll (sucré, niv. 1, ★★★★) — écrite, en attente du test
-  - [ ] Croque-monsieur (niv. 4)
+  - [ ] Croque-monsieur (niv. 4) — écrite (mélange fromage + crème fraîche), en attente du test
   - [ ] Carbonara (niv. 5)
   - [ ] Gâteau au chocolat (sucré, niv. 5)
   - [ ] Tarte aux pommes (sucré, niv. 7)

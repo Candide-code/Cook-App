@@ -27,7 +27,7 @@ Décisions prises ensemble avant de coder. Ce qui est ici fait foi pour la v1.
 |---|---|---|---|---|
 | 1 | 🍳 Omelette au fromage | 1 | 10 min | Cuire des œufs, gérer le feu |
 | 2 | 🍝 Pâtes à la sauce tomate | 1 | 20 min | Cuire des pâtes, sauce simple |
-| 3 | 🥪 Croque-monsieur | 4 | 15 min | Assembler, utiliser le four |
+| 3 | 🥪 Croque-monsieur | 4 | 20 min | Assembler, utiliser le four |
 | 4 | 🍚 Riz sauté | 8 | 20 min | Faire sauter à feu vif |
 | 5 | 🍝 Carbonara (sans crème) | 5 | 20 min | Lier une sauce aux œufs |
 | 6 | 🍛 Curry japonais au poulet | 12 | 45 min | Mijoter, épaissir avec un roux |
