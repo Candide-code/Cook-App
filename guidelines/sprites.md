@@ -44,6 +44,8 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | Huile | `huile.png` | ✏️ à dessiner |
 | Légumes (87) : tous ceux du pack « 99 vegetables and herbs » (ail, carotte, oignon, pomme de terre, tomate, courgette, épinards, salade…) | `[identifiant].png` (voir `recettes/ingredients.js`) | ✅ pack légumes 16×16 |
 | Herbes (12) : basilic, persil, menthe, ciboulette, aneth, ail des ours, gingembre, shiso… | `[identifiant].png` | ✅ même pack |
+| Pépites de chocolat | `pepites-chocolat.png` | ✅ pack plats (`26_chocolate`, une tablette) |
+| Farine, sucre, levure chimique | `farine.png`, `sucre.png`, `levure-chimique.png` | ✏️ sprite temporaire (à trouver ou dessiner) |
 | Légumes absents des packs : avocat, céleri-rave, jalapeño, oignon nouveau, patate douce, pois gourmands, poivrons jaune et rouge, radis blanc | — | ✏️ sprite temporaire (à trouver ou dessiner) |
 | Fruits (51) et fruits à coque (9) | `[identifiant].png` | ✅ pack fruits 16×16 (variantes tranchées / ouvertes non utilisées) |
 | Champignons (15), légumineuses (14), céréales, fromages (15), lait et yaourts, épices (cumin, muscade, safran, vanille…), algues, eau | `[identifiant].png` | ✅ pack ingrédients variés 16×16 (œufs de couleur, œufs fêlés et champignons « dessin animé » non utilisés) |
@@ -62,7 +64,7 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | Bol | `bol.png` | ✅ pack plats (`04_bowl`) |
 | Assiette | `assiette.png` | ✅ pack plats (`01_dish`) |
 | Plaque de four | `plaque.png` | ✏️ à dessiner |
-| Tous les autres ustensiles du catalogue (51) : poêles et casseroles, plats et moules, bols et mesures, petits outils, électroménager | `[identifiant].png` (voir `ustensiles` dans `recettes/ingredients.js`) | ✏️ à trouver ou dessiner (sprite temporaire en attendant) |
+| Tous les autres ustensiles du catalogue (53, avec congélateur et réfrigérateur) : poêles et casseroles, plats et moules, bols et mesures, petits outils, électroménager | `[identifiant].png` (voir `ustensiles` dans `recettes/ingredients.js`) | ✏️ à trouver ou dessiner (sprite temporaire en attendant) |
 
 ## Plats (`CODE/assets/sprites/plats/`)
 
@@ -74,6 +76,6 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | Riz sauté | `riz-saute.png` | ✏️ à dessiner (base possible : `Bowl of rice.png` du pack) |
 | Carbonara | `carbonara.png` | ✏️ à dessiner |
 | Curry japonais | `curry-japonais.png` | ✅ pack plats (`33_curry_dish`), branché quand la recette sera ajoutée |
-| Cookies | `cookies.png` | ✅ pack plats (`29_cookies_dish`), branché quand la recette sera ajoutée |
+| Cookies | `cookies.png` | ✅ pack plats (`29_cookies_dish`) |
 
 En attendant, chaque sprite manquant est remplacé par un sprite temporaire (`.sprite-temp`).

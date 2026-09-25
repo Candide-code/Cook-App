@@ -31,6 +31,7 @@ Décisions prises ensemble avant de coder. Ce qui est ici fait foi pour la v1.
 | 4 | 🍚 Riz sauté | 3 | 20 min | Faire sauter à feu vif |
 | 5 | 🍝 Carbonara (sans crème) | 4 | 20 min | Lier une sauce aux œufs |
 | 6 | 🍛 Curry japonais au poulet | 5 | 45 min | Mijoter, épaissir avec un roux |
+| 7 | 🍪 Cookies (sucré, recette perso, 15 cookies) | 1 | 60 min | Crémer beurre et sucre, repos au congélateur, cuisson au four |
 - **Mes propres recettes (CUSTOM)** : avancé dans la v1 le 2026-09-25 (prévu en V2 au départ). Voir « Recettes custom » plus bas.
 
 ### Gameplay d'une recette
@@ -66,6 +67,7 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 | 🍚 Riz sauté | ★★★ | 3 |
 | 🍝 Carbonara | ★★★ | 4 |
 | 🍛 Curry japonais | ★★★★ | 5 |
+| 🍪 Cookies | ★★ | 1 |
 
 **Multiplicateurs**
 - **Découverte ×1,5** : la première fois qu'on fait une recette.
@@ -279,7 +281,7 @@ Les 16 couleurs de Sweetie 16 : `#1a1c2c` `#5d275d` `#b13e53` `#ef7d57` `#ffcd75
 └──────────────────────────┘
 ```
 
-**Mise à jour (2026-09-25) : RECETTES ouvre un menu SALÉ / SUCRÉ** (deux gros boutons comme l'accueil, en jaune doux `#ffcd75` pour les distinguer de l'orange du menu principal), puis la grille de la catégorie choisie. Chaque ← remonte d'un cran (grille → menu salé/sucré → accueil). Une catégorie sans recette affiche « Pas encore de recette ici… bientôt ! ».
+**Mise à jour (2026-09-25) : RECETTES ouvre un menu SALÉ / SUCRÉ** (deux gros boutons comme l'accueil, en jaune doux `#ffcd75` pour les distinguer de l'orange du menu principal), puis la grille de la catégorie choisie. Chaque ← remonte d'un cran (grille → menu salé/sucré → accueil). Une catégorie sans recette affiche « Pas encore de recette ici… bientôt ! ». Badge **NEW!** sur RECETTES (accueil) et sur SALÉ / SUCRÉ tant qu’une recette de cette catégorie est débloquée mais jamais cuisinée (même règle que le NEW! des cartes ; badge orange sur les boutons jaunes).
 
 **Mise à jour pendant la tranche verticale : l'accueil devient un menu.** L'accueil garde le profil en haut, puis deux gros boutons : **RECETTES** (la grille décrite ci-dessus, sur son propre écran avec ←) et **GRIMOIRE**.
 ```
