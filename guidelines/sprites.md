@@ -44,6 +44,10 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | Huile | `huile.png` | ✏️ à dessiner |
 | Légumes (87) : tous ceux du pack « 99 vegetables and herbs » (ail, carotte, oignon, pomme de terre, tomate, courgette, épinards, salade…) | `[identifiant].png` (voir `recettes/ingredients.js`) | ✅ pack légumes 16×16 |
 | Herbes (12) : basilic, persil, menthe, ciboulette, aneth, ail des ours, gingembre, shiso… | `[identifiant].png` | ✅ même pack |
+| PRC (plat) | `plats/prc.png` | 🟡 pack plats (`86_roastedchicken_dish`, un poulet rôti) en attendant une vraie image de poulet pané + riz + courgettes |
+| Chapelure | `chapelure.png` | ✏️ sprite temporaire |
+| Cinnamon roll (plat) | `plats/cinnamon-roll.png` | 🟡 pack plats (`12_bun_dish`, une brioche) en attendant une vraie image |
+| Levure boulangère, cannelle, cream cheese, sucre glace | `[identifiant].png` | ✏️ sprite temporaire |
 | Pépites de chocolat | `pepites-chocolat.png` | ✅ pack plats (`26_chocolate`, une tablette) |
 | Farine, sucre, levure chimique | `farine.png`, `sucre.png`, `levure-chimique.png` | ✏️ sprite temporaire (à trouver ou dessiner) |
 | Légumes absents des packs : avocat, céleri-rave, jalapeño, oignon nouveau, patate douce, pois gourmands, poivrons jaune et rouge, radis blanc | — | ✏️ sprite temporaire (à trouver ou dessiner) |

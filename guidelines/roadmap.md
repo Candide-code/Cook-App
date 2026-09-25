@@ -59,13 +59,21 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
   - [x] Confirmation avant de quitter une recette (✕)
   - [x] Bouton « étape précédente »
 - [ ] *(Optionnel, plus tard)* Tester l'omelette en vraie cuisine
-- [ ] Ajouter les recettes **une par une** (on finit et on teste une recette avant de passer à la suivante) :
-  - [x] Pâtes tomate
-  - [ ] Croque-monsieur
-  - [ ] Riz sauté
-  - [ ] Carbonara
-  - [ ] Curry japonais
-  - [ ] Cookies (sucré)
+- [ ] Ajouter les recettes **une par une** (on finit et on teste une recette avant de passer à la suivante), dans l'ordre des déblocages :
+  - [x] Pâtes tomate (niv. 1)
+  - [ ] Cookies (sucré, niv. 1) — écrite, en attente du test
+  - [ ] PRC — poulet riz courgettes (niv. 2) — écrite, en attente du test
+  - [ ] Cinnamon roll (sucré, niv. 1, ★★★★) — écrite, en attente du test
+  - [ ] Croque-monsieur (niv. 4)
+  - [ ] Carbonara (niv. 5)
+  - [ ] Gâteau au chocolat (sucré, niv. 5)
+  - [ ] Tarte aux pommes (sucré, niv. 7)
+  - [ ] Riz sauté (niv. 8)
+  - [ ] Cheesecake (sucré, niv. 9)
+  - [ ] Quiche (niv. 10)
+  - [ ] Muffins (sucré, niv. 10)
+  - [ ] Curry japonais (niv. 12)
+  - [x] Déblocages revus (1 par palier, 2 tous les 5 niveaux) + bandeau « À DÉBLOQUER » (3 prochaines) + recettes prévues (`aVenir`)
 
 ## 👤 Profil : « Crée ton chef »
 Décidé le 2026-09-25 (détails dans le cadrage, « Profil et personnage »). Pack Mana Seed, sans animation pour l'instant.

@@ -27,10 +27,12 @@ Décisions prises ensemble avant de coder. Ce qui est ici fait foi pour la v1.
 |---|---|---|---|---|
 | 1 | 🍳 Omelette au fromage | 1 | 10 min | Cuire des œufs, gérer le feu |
 | 2 | 🍝 Pâtes à la sauce tomate | 1 | 20 min | Cuire des pâtes, sauce simple |
-| 3 | 🥪 Croque-monsieur | 2 | 15 min | Assembler, utiliser le four |
-| 4 | 🍚 Riz sauté | 3 | 20 min | Faire sauter à feu vif |
-| 5 | 🍝 Carbonara (sans crème) | 4 | 20 min | Lier une sauce aux œufs |
-| 6 | 🍛 Curry japonais au poulet | 5 | 45 min | Mijoter, épaissir avec un roux |
+| 3 | 🥪 Croque-monsieur | 4 | 15 min | Assembler, utiliser le four |
+| 4 | 🍚 Riz sauté | 8 | 20 min | Faire sauter à feu vif |
+| 5 | 🍝 Carbonara (sans crème) | 5 | 20 min | Lier une sauce aux œufs |
+| 6 | 🍛 Curry japonais au poulet | 12 | 45 min | Mijoter, épaissir avec un roux |
+| 8 | 🍗 PRC — poulet riz courgettes, version panée (plat du quotidien, 1 pers.) | 2 | 35 min | Paner à l'anglaise (farine, jaune d'œuf, chapelure), mener 3 cuissons en parallèle |
+| 9 | 🥐 Cinnamon roll (sucré, recette perso, ~12 rolls) ★★★★ | 1 | 3 h (+ 2 h d'attente) | Pâte levée : pétrir, pousser, dégazer, rouler ; glaçage au cream cheese |
 | 7 | 🍪 Cookies (sucré, recette perso, 15 cookies) | 1 | 60 min | Crémer beurre et sucre, repos au congélateur, cuisson au four |
 - **Mes propres recettes (CUSTOM)** : avancé dans la v1 le 2026-09-25 (prévu en V2 au départ). Voir « Recettes custom » plus bas.
 
@@ -63,10 +65,10 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 |---|---|---|
 | 🍳 Omelette | ★ | 1 |
 | 🍝 Pâtes tomate | ★ | 1 |
-| 🥪 Croque-monsieur | ★★ | 2 |
-| 🍚 Riz sauté | ★★★ | 3 |
-| 🍝 Carbonara | ★★★ | 4 |
-| 🍛 Curry japonais | ★★★★ | 5 |
+| 🥪 Croque-monsieur | ★★ | 4 |
+| 🍚 Riz sauté | ★★★ | 8 |
+| 🍝 Carbonara | ★★★ | 5 |
+| 🍛 Curry japonais | ★★★★ | 12 |
 | 🍪 Cookies | ★★ | 1 |
 
 **Multiplicateurs**
@@ -107,7 +109,24 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 - Quand on passe un rang, un message l'annonce en fin de recette. Le rang et la progression vers le suivant sont affichés sur l'écran de préparation.
 
 ### Ce qu'on débloque
-- **Des recettes**, selon le niveau (voir tableau ci-dessus).
+- **Des recettes**, selon le niveau (revu le 2026-09-25) : **1 recette par palier, 2 tous les 5 niveaux**, en alternant salé et sucré, et en espaçant les paliers. Au lancement : omelette, pâtes tomate (salé) et cookies (sucré).
+
+| Niveau | Salé | Sucré |
+|---|---|---|
+| 1 | Omelette, Pâtes tomate | Cookies, Cinnamon roll |
+| 2 | PRC (poulet riz courgettes), plat du quotidien | |
+| 4 | Croque-monsieur | |
+| 5 | Carbonara | Gâteau au chocolat |
+| 7 | | Tarte aux pommes |
+| 8 | Riz sauté | |
+| 9 | | Cheesecake |
+| 10 | Quiche | Muffins |
+| 12 | Curry japonais | |
+| 13, … | à définir (1 par palier, 2 tous les 5 niveaux) | |
+
+  Pourquoi pas plus : avec la courbe d'XP, le niveau 10 arrive vers 2 mois ; 2 recettes par niveau demanderaient ~20 recettes écrites et testées d'ici là, et on n'aurait pas le temps de toutes les cuisiner.
+- **Affichage des recettes à venir** : dans chaque catégorie de RECETTES, un bandeau **« À DÉBLOQUER »** tout en haut montre les **3 prochaines** recettes verrouillées (🔒 ??? + « Niv. X »), puis « TES RECETTES » (les NEW! en premier). Les plus lointaines restent cachées. Toujours visible même avec 50 recettes.
+- **Recettes prévues** : une recette peut être placée avant d'être écrite (`aVenir: true` : juste sa catégorie et son niveau). Elle apparaît en ??? ; si on atteint son niveau avant qu'elle soit écrite, elle affiche « Bientôt » au lieu de se débloquer.
 - **Un titre par palier de niveaux** (pas à chaque niveau), accordé selon le genre choisi dans le profil. Les paliers s'espacent : le titre suivant se mérite de plus en plus. Le titre change en fin de recette avec un message.
 
 | Dès le niv. | Masculin | Féminin | Arrive après ~ (3 repas/semaine) |
@@ -300,7 +319,9 @@ Les 16 couleurs de Sweetie 16 : `#1a1c2c` `#5d275d` `#b13e53` `#ef7d57` `#ffcd75
 └──────────────────────────┘
 ```
 
-**5. Grimoire** : une simple liste, comme la table des matières d'un livre. Juste le nom des recettes déjà cuisinées, « ??? » pour les autres, et le compteur de découvertes. Pas de rang, de bordure de maîtrise ni de nombre de fois : ça reste sur l'écran Recettes. On touche un nom pour ouvrir la fiche : ★, temps, ingrédients avec quantités, ustensiles, étapes, et un bouton « Cuisiner » qui mène à la préparation. Le récap de fin de recette affiche le même contenu. Quand une recette est cuisinée pour la 1re fois, un badge « NEW! » apparaît sur le bouton GRIMOIRE et sur la ligne de la recette, jusqu'à ce qu'on ouvre sa fiche.
+**5. Grimoire** : une simple liste, comme la table des matières d'un livre. Juste le nom des recettes déjà cuisinées, « ??? » pour les autres, et le compteur de découvertes. Pas de rang, de bordure de maîtrise ni de nombre de fois : ça reste sur l'écran Recettes. On touche un nom pour ouvrir la fiche : ★, temps, ingrédients avec quantités, ustensiles, étapes, et un bouton « Cuisiner » qui mène à la préparation. Le récap de fin de recette affiche le même contenu. Quand une recette est cuisinée pour la 1re fois, un badge « NEW! » apparaît sur le bouton GRIMOIRE et sur la ligne de la recette, jusqu'à ce qu'on ouvre sa fiche. **Album à compléter** (2026-09-25) : le Grimoire montre **toutes** les recettes, y compris celles du jeu prévues mais pas encore écrites, en « ??? ». Les recettes découvertes (cuisinées au moins une fois) sont **en haut**, tous les « ??? » en dessous, pour les recettes du jeu comme pour les recettes perso, avec ou sans filtre. Le compteur compte toute la collection (ex. « 3 / 16 recettes découvertes »).
+
+**Recherche** (2026-09-25) : un champ « 🔍 Chercher une recette… » dans la grille de RECETTES / CUSTOM et dans le GRIMOIRE. Filtre pendant qu'on tape, sans tenir compte des accents ni des majuscules. Dans la grille, le bandeau « À DÉBLOQUER » se cache pendant une recherche ; la recherche se vide quand on change de catégorie, et reste en revenant d'une recette. Dans le Grimoire, elle cherche parmi les recettes découvertes (les « ??? » sont cachés), se combine avec le filtre, affiche « n résultat(s) » et se vide quand on rouvre le Grimoire depuis l'accueil.
 ```
 ┌──────────────────────────┐
 │ ←  Grimoire              │
