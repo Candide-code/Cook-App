@@ -64,6 +64,7 @@ Décidé après l'étape 5 : plutôt que de finir chaque phase pour les 6 recett
   - [ ] Cookies (sucré, niv. 1) — écrite, en attente du test
   - [ ] PRC — poulet riz courgettes (niv. 2) — écrite, en attente du test
   - [ ] Cinnamon roll (sucré, niv. 1, ★★★★) — écrite, en attente du test
+  - [ ] Gyozas au poulet maison (niv. 3, ★★) — écrite (recette perso, feuilles achetées), en attente du test
   - [ ] Croque-monsieur (niv. 4) — écrite (mélange fromage + crème fraîche), en attente du test
   - [ ] Carbonara (niv. 5)
   - [ ] Gâteau au chocolat (sucré, niv. 5)
@@ -103,6 +104,17 @@ Décidé le 2026-09-25 (détails dans le cadrage, « Recettes custom »). Avanc�
 - [x] **8. Jouer une recette custom** : préparation, cuisine, minuteur, XP de la difficulté choisie
 - [x] **9. Modifier / supprimer** une recette custom (boutons sur l’écran de préparation ; l’assistant s’ouvre pré-rempli)
 - [x] **10. Grimoire : filtre** « Mes recettes » / « Recettes du jeu »
+
+## 📲 App installable (PWA)
+Décidé le 2026-09-26, à la demande des potes : une version « téléchargeable » dont les recettes se mettent à jour toutes seules. Gratuit, sans store : une PWA sur GitHub Pages. On push, tout le monde reçoit la mise à jour à la prochaine ouverture. La sauvegarde est gardée (même adresse).
+
+- [x] **1. Logo de l'app** : assiette + fourchette et couteau croisés à manches rouges, 32×32, Sweetie 16, fond `#1a1c2c` plein, dessin dans la zone de sécurité centrale 24×24. `CODE/assets/icones/` : `icone-512.png` (×16), `icone-192.png` (×6), source `logo.piskel`
+- [x] **2. `manifest.json`** : nom, icônes (dont « maskable » pour Android), plein écran (`standalone`), portrait, couleurs ; liens dans `index.html` (icône iPhone, couleur de la barre qui suit le thème)
+- [x] **3. Service worker** (`CODE/service-worker.js`, lancé par `main.js`) : réseau d'abord pour le code et les recettes (copie du téléphone si hors ligne ou réseau > 3 s), copie d'abord pour les images et polices. Pas de numéro de version à changer : un push suffit
+  - *JS découvert :* service worker, `caches`, `fetch`, `async` / `await`
+  - *À savoir :* un nouveau fichier JS/CSS s'ajoute aussi dans `FICHIERS_DE_BASE` (sinon il n'est hors ligne qu'après un 1er chargement)
+- [ ] **4. Message « nouvelle version »** dans le jeu, avec un bouton pour mettre à jour
+- [ ] **5. Test sur téléphone** (Android : « Installer l'application » ; iPhone : Safari → Partager → « Sur l'écran d'accueil »), puis envoi du lien aux potes
 
 Les étapes ci-dessous sont la roadmap d'origine. Celles réalisées pendant la tranche verticale ont été cochées le 2026-09-25 (code en place et utilisé). Restent : les 6 recettes de la v1 (en cours, voir plus haut), la phase 6 (interactif et pixel), les tests téléphone et les points d'étape.
 

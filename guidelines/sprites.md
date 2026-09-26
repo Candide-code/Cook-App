@@ -49,6 +49,7 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | Cinnamon roll (plat) | `plats/cinnamon-roll.png` | 🟡 pack plats (`12_bun_dish`, une brioche) en attendant une vraie image |
 | Levure boulangère, cannelle, cream cheese, crème fraîche, sucre glace | `[identifiant].png` | ✏️ sprite temporaire |
 | Pépites de chocolat | `pepites-chocolat.png` | ✅ pack plats (`26_chocolate`, une tablette) |
+| Feuilles de gyoza, sauce huître, sauce soja sucrée, huile pimentée, nokoss, graines de sésame (gyozas) | `[identifiant].png` | ✏️ sprite temporaire |
 | Farine, sucre, levure chimique | `farine.png`, `sucre.png`, `levure-chimique.png` | ✏️ sprite temporaire (à trouver ou dessiner) |
 | Légumes absents des packs : avocat, céleri-rave, jalapeño, oignon nouveau, patate douce, pois gourmands, poivrons jaune et rouge, radis blanc | — | ✏️ sprite temporaire (à trouver ou dessiner) |
 | Fruits (51) et fruits à coque (9) | `[identifiant].png` | ✅ pack fruits 16×16 (variantes tranchées / ouvertes non utilisées) |
@@ -81,5 +82,6 @@ Chaque fichier fait 64×64 (pose de face). Toutes les couches ont le même cadre
 | Carbonara | `carbonara.png` | ✏️ à dessiner |
 | Curry japonais | `curry-japonais.png` | ✅ pack plats (`33_curry_dish`), branché quand la recette sera ajoutée |
 | Cookies | `cookies.png` | ✅ pack plats (`29_cookies_dish`) |
+| Gyozas au poulet | `gyozas-poulet.png` | ✅ pack plats (`37_dumplings_dish`) |
 
 En attendant, chaque sprite manquant est remplacé par un sprite temporaire (`.sprite-temp`).

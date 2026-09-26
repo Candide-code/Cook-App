@@ -34,6 +34,7 @@ Décisions prises ensemble avant de coder. Ce qui est ici fait foi pour la v1.
 | 8 | 🍗 PRC — poulet riz courgettes, version panée (plat du quotidien, 1 pers.) | 2 | 35 min | Paner à l'anglaise (farine, jaune d'œuf, chapelure), mener 3 cuissons en parallèle |
 | 9 | 🥐 Cinnamon roll (sucré, recette perso, ~12 rolls) ★★★★ | 1 | 3 h (+ 2 h d'attente) | Pâte levée : pétrir, pousser, dégazer, rouler ; glaçage au cream cheese |
 | 7 | 🍪 Cookies (sucré, recette perso, 15 cookies) | 1 | 60 min | Crémer beurre et sucre, repos au congélateur, cuisson au four |
+| 10 | 🥟 Gyozas au poulet maison (recette perso, farce maison + feuilles achetées, 700 g de poulet : le reste se congèle) ★★ | 3 | 60 min | Plier en portefeuille, cuisson poêlée puis vapeur, sauce soja sucrée pimentée |
 - **Mes propres recettes (CUSTOM)** : avancé dans la v1 le 2026-09-25 (prévu en V2 au départ). Voir « Recettes custom » plus bas.
 
 ### Gameplay d'une recette
@@ -118,6 +119,7 @@ On cuisine en vrai en même temps : écran pratique avec les mains occupées (gr
 |---|---|---|
 | 1 | Omelette, Pâtes tomate | Cookies, Cinnamon roll |
 | 2 | PRC (poulet riz courgettes), plat du quotidien | |
+| 3 | Gyozas au poulet maison (ajouté le 2026-09-26) | |
 | 4 | Croque-monsieur | |
 | 5 | Carbonara | Gâteau au chocolat |
 | 7 | | Tarte aux pommes |
