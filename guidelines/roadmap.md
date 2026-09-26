@@ -5,7 +5,7 @@ App qui gamifie la vraie cuisine : on suit des recettes faciles pas à pas en ma
 **Techno :** HTML, CSS, JavaScript (sans framework)
 **Méthode :** on code ensemble, étape par étape. Chaque étape se termine par quelque chose qui marche dans le navigateur.
 **Référence :** toutes les décisions sont dans [phase-0-cadrage.md](phase-0-cadrage.md).
-**En ligne :** https://candide-code.github.io/Cook-App/ (GitHub Pages, mis à jour à chaque push sur `main`)
+**En ligne :** https://candide-code.github.io/Underplate/CODE/ (GitHub Pages, mis à jour à chaque push sur `main`). Le dépôt s'appelait Cook-App avant : l'ancienne adresse `…/Cook-App/` ne marche plus (404)
 
 ---
 
@@ -113,7 +113,8 @@ Décidé le 2026-09-26, à la demande des potes : une version « téléchargeabl
 - [x] **3. Service worker** (`CODE/service-worker.js`, lancé par `main.js`) : réseau d'abord pour le code et les recettes (copie du téléphone si hors ligne ou réseau > 3 s), copie d'abord pour les images et polices. Pas de numéro de version à changer : un push suffit
   - *JS découvert :* service worker, `caches`, `fetch`, `async` / `await`
   - *À savoir :* un nouveau fichier JS/CSS s'ajoute aussi dans `FICHIERS_DE_BASE` (sinon il n'est hors ligne qu'après un 1er chargement)
-- [ ] **4. Message « nouvelle version »** dans le jeu, avec un bouton pour mettre à jour
+  - *Corrigé le 2026-09-26 :* hors ligne ne marchait pas au 1er lancement (images et polices chargées avant le service worker, donc jamais gardées). Maintenant, à l'installation, il garde aussi **tous les sprites** (liste lue dans les catalogues `ingredients.js`, `recettes.js`, `chef.js` : rien à tenir à la main) et les **polices Google**
+- [x] **4. Message « Nouvelle recette au menu ! »** (`CODE/nouveautes/nouveautes.js`) : à l'ouverture, une boîte de dialogue annonce les recettes arrivées avec une mise à jour (nom, salé/sucré, « prête à cuisiner ! » ou « dès le niveau X »), une seule fois. La sauvegarde retient `recettesConnues`. Nouveau joueur : rien d'annoncé. Anciennes sauvegardes : les gyozas sont annoncés. (Remplace le message « nouvelle version » : inutile, le jeu charge déjà la dernière version à chaque ouverture)
 - [ ] **5. Test sur téléphone** (Android : « Installer l'application » ; iPhone : Safari → Partager → « Sur l'écran d'accueil »), puis envoi du lien aux potes
 
 Les étapes ci-dessous sont la roadmap d'origine. Celles réalisées pendant la tranche verticale ont été cochées le 2026-09-25 (code en place et utilisé). Restent : les 6 recettes de la v1 (en cours, voir plus haut), la phase 6 (interactif et pixel), les tests téléphone et les points d'étape.
